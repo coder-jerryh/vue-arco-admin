@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_1849226_ayu5r1522pc.css">
+    <link rel="icon" href="/logo.png" type="image/x-icon">
+    <title>Vue3 Arco Admin</title>
+  </head>
+  <body>
+    <style>
+      body{
+        min-width: 900px;
+      }
+      .n-config-provider {
+        height: 100vh;
+      }
+      #loading {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        position: fixed;
+        z-index: 20;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: #fff;
+        opacity: 1;
+        visibility: visible;
+        transition: all ease .5s;
+      }
+      #loading img {
+        width: 78px;
+      }
+      #loading .circle{
+        position: fixed;
+        left: calc(50% - 78px);
+        top: calc(50% - 76px);
+        width: 150px;
+        height: 154px;
+        border-radius: 50%;
+        border: 1px solid transparent;
+        border-top: 5px solid #00a543;
+        animation: rotate .9s linear infinite;
+        transition: all ease .9s;
+        box-sizing: border-box;
+      }
+      @keyframes rotate{
+        from{
+          transform: rotate(0deg);
+        }
+        to{
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+    <!-- <div id="loading">
+      <div class='circle'></div>
+      <img src="/logo.png">
+    </div> -->
+    <main id="app"></main>
+    <script type="module" src="/src/main.ts"></script>
+    <script src="//g.alicdn.com/dingding/dinglogin/0.0.5/ddLogin.js"></script>
+    <!-- markdown解析 -->
+    <script src="//cdn.bootcss.com/pagedown/1.0/Markdown.Converter.js"></script>
+  </body>
+</html>

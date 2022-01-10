@@ -1,0 +1,36 @@
+// 弹出框
+.arco-modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -100%);
+  width: 400px;
+  // 头部
+  .arco-modal-header {
+    padding: 0 12px;
+    height: 46px;
+    border-bottom: none;
+    .arco-modal-title {
+      color: #303133;
+      justify-content: flex-start;
+      .arco-modal-title-icon {
+        font-size: 0;
+        .arco-icon {
+          margin-right: 4px;
+          width: 1.2em;
+          height: 1.2em;
+        }
+      }
+    }
+  }
+  // 中间
+  .arco-modal-body {
+    padding: 6px 18px 6px 38px;
+    color: #3a3a3a;
+  }
+  // 尾部
+  .arco-modal-footer {
+    padding: 12px;
+    border-top: none;
+  }
+}

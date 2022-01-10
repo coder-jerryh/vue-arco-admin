@@ -1,0 +1,57 @@
+.xy-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+$border: 1px solid #e5e6ea;
+
+// 滑动过渡
+.slide-enter-from,
+.slide-leave-to {
+  transform: translateX(-20px);
+  opacity: 0;
+}
+.slide-enter-active {
+  transition: all 0.25s;
+}
+
+ // 弹窗蒙版
+ .fade-mask-leave-active,
+ .fade-mask-enter-active {
+   transition: opacity 0.3s;
+ }
+ .fade-mask-enter-from,
+ .fade-mask-leave-to {
+   opacity: 0;
+ }
+ 
+// 弹窗
+.zoom-enter-from,
+.zoom-appear-from {
+  transform: translate(-50%, -50%) scale(0.5, 0.5)!important;
+  opacity: 0;
+}
+.zoom-enter-to,
+.zoom-appear-to {
+  transform: translate(-50%, -50%) scale(1, 1)!important;
+  opacity: 1;
+}
+.zoom-enter-active,
+.zoom-appear-active {
+  transition: opacity ease .2,
+    transform ease .2;
+}
+.zoom-leave-from {
+  transform: translate(-50%, -50%) scale(1, 1)!important;
+  opacity: 1;
+}
+.zoom-leave-to {
+  transform: translate(-50%, -50%) scale(0.5, 0.5)!important;
+  opacity: 0;
+}
+.zoom-leave-active {
+  transition: opacity ease .25,
+    transform ease .25;
+}
